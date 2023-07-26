@@ -38,7 +38,7 @@
                 <h1 class="text-4xl text-black lg:text-white font-bold pt-2">Fruit Burst</h1>
               </div>
               <div class="navbar-end ">
-                <div class=" pl-14 pt-5 w-[300px] relative">
+                <div class=" pl-14 pt-5 w-[300px] relative hidden lg:block">
                   <input type="text" placeholder="Search" class="input rounded-[50px]   md:w-auto"  />
                   <img class="w-6 h-6 absolute right-12 bottom-3 " src="./images/Frame (10).svg" alt="">
                 </div>
@@ -55,7 +55,7 @@
             <div class="hero h-[600px]" style="background-image: url(./images/banner1.png);">
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-xl">
+                <div class=" max-w-sm lg:max-w-xl">
                   <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
                   <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
                   <button class="btn bg-[#F85559] border-none">Shop Now</button>
@@ -72,7 +72,7 @@
             <div class="hero h-[600px]" style="background-image: url(./images/banner2.png);">
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-xl">
+                <div class="max-w-sm lg:max-w-xl">
                   <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
                   <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
                   <button class="btn bg-[#F85559] border-none">Shop Now</button>
@@ -89,7 +89,7 @@
             <div class="hero h-[600px]" style="background-image: url(./images/banner3.png);">
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-xl">
+                <div class=" max-w-sm lg:max-w-xl">
                   <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
                   <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
                   <button class="btn bg-[#F85559] border-none">Shop Now</button>
@@ -106,7 +106,7 @@
             <div class="hero h-[600px]" style="background-image: url(./images/banner4.png);">
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-xl">
+                <div class="max-w-sm lg:max-w-xl">
                   <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
                   <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
                   <button class="btn bg-[#F85559] border-none">Shop Now</button>
@@ -147,13 +147,13 @@
     <!-- main section -->
     <main>
       <!-- deal section -->
-      <section class="flex  mt-44 justify-between border-4 ml-16 gap-8  mr-16 lg:ml-28 flex-col lg:flex-row ">
-        <div class="flex-1">
+      <section class="flex w-10/12 mx-auto mt-44 gap-5 justify-between flex-col lg:flex-row ">
+        <div class="">
           <h1 class="text-5xl font-extrabold">Deal of the day</h1>
-          <p class="text-sm font-medium pt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="text-sm font-medium pt-6 w-2/3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <!-- countdown -->
-        <div class="flex-1  mr-24 items-center justify-center">
+        <div class="  ">
           <div class="grid grid-flow-col gap-3 lg:gap-6 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl ">
@@ -192,9 +192,9 @@
         </div>
       </section>
       <!-- fruit card section -->
-      <section class="grid grid-cols-1 lg:grid-cols-4 mt-12 lg:ml-24 lg:mr-24 gap-5 right-0 left-0">
+      <section class="grid grid-cols-1 lg:grid-cols-4 mt-12 lg:ml-28 lg:mr-28 gap-5 right-0 left-0">
         <!-- card 1 -->
-        <div class="card  w-[340] h-[470] border-2">
+        <div class="card border-2">
           <figure class="px-10 pt-10">
             <img src="./images/fruit6.png" alt="" class="" />
           </figure>
@@ -223,7 +223,7 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="card  w-[340] h-[470] border-2">
+        <div class="card border-2">
           <figure class="px-10 pt-10">
             <img src="./images/fruit7.png" alt="" class="" />
           </figure>
@@ -252,7 +252,7 @@
           </div>
         </div>
         <!-- card 3 -->
-        <div class="card  w-[340] h-[470] border-2">
+        <div class="card border-2">
           <figure class="px-10 pt-10">
             <img src="./images/fruit8.png" alt="" class="" />
           </figure>
@@ -281,7 +281,7 @@
           </div>
         </div>
         <!-- card 4 -->
-        <div class="card  w-[340] h-[470] border-2">
+        <div class="card border-2">
           <figure class="px-10 pt-10">
             <img src="./images/fruit9.png" alt="" class="" />
           </figure>
@@ -313,6 +313,18 @@
       <div class="flex items-center justify-center mt-16">
         <button class="bg-[#F85559] text-white rounded-lg py-2 px-4 ">Shop All</button>
       </div>
+      <!-- team section -->
+      <section class="mt-12 lg:ml-28 lg:mr-28">
+        <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content mb-48">
+            <div class="max-w-xl text-white mb-10">
+              <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+              <p class="mb-5 text-sm font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer>
