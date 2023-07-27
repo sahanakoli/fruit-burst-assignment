@@ -23,7 +23,7 @@
         <nav>
           <div class="max-w-7xl h-28 lg:bg-[#F85559] mx-auto rounded-[600px] mt-12 right-0">
             <div class="navbar ">
-              <div class="navbar-start">
+              <div class="navbar-start ml-10">
                 <div class="navbar-center hidden lg:block  ">
                   <ul class="menu menu-horizontal px-1 text-white text-lg font-medium pt-5 pl-3">
                     <li><a>Home</a></li>
@@ -32,12 +32,28 @@
                     <li><a>All Fruits</a></li>
                   </ul>
                 </div>
+                <div class="dropdown visible lg:invisible">
+                  <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                      <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </label>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-36">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li> 
+                    <li><a>Search Bar</a></li> 
+                  </ul>
+                </div>
               </div>
-              <div class="navbar-center text-white gap-2">
+              <div class="navbar-center ml-5 ">
+                <div class="flex pt-4 gap-2">
                 <img src="./images/logo.png" alt="">
                 <h1 class="text-4xl text-black lg:text-white font-bold pt-2">Fruit Burst</h1>
+                </div>
               </div>
-              <div class="navbar-end ">
+              <div class="navbar-end mr-10">
                 <div class=" pl-14 pt-5 w-[300px] relative hidden lg:block">
                   <input type="text" placeholder="Search" class="input rounded-[50px]   md:w-auto"  />
                   <a href=""><img class="w-6 h-6 absolute right-10 bottom-3 " src="./images/icon/Frame (10).svg" alt=""></a>
@@ -47,7 +63,7 @@
           </div>
         </nav>
         <!-- banner section -->
-        <div class="mt-10 lg:ml-28 lg:mr-28 lg:relative right-0">
+        <div class="mt-14 lg:ml-28 lg:mr-28 lg:relative right-0">
           <div class="carousel w-full ">
           <!-- slider 1 -->
           <div id="slide1" class="carousel-item relative w-full ">
@@ -146,7 +162,7 @@
     <!-- main section -->
     <main>
       <!-- deal section -->
-      <section class="flex w-10/12 mx-auto mt-44 gap-5 justify-between flex-col lg:flex-row ">
+      <section class="flex w-10/12 mx-auto mt-44 gap-5 justify-between flex-col md:flex-row lg:flex-row ">
         <div class="">
           <h1 class="text-5xl font-extrabold">Deal of the day</h1>
           <p class="text-sm font-medium pt-6 w-2/3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -191,7 +207,7 @@
         </div>
       </section>
       <!-- fruit card section -->
-      <section class="grid grid-cols-1 lg:grid-cols-4 mt-12 lg:ml-28 lg:mr-28 gap-5 right-0 left-0">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 lg:ml-28 lg:mr-28 gap-5 right-0 left-0">
         <!-- card 1 -->
         <div class="card border-2">
           <figure class="px-10 pt-10">
@@ -211,8 +227,8 @@
             <img class="pl-44 " src="./images/fruit6.png" alt="">
             <h3 class="font-extrabold text-4xl pt-6">Apple</h3>
             <p class="py-4 pt-6 ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-            <a href=""><img class="pt-8 pl-36" src="./images/icon/Group 24.svg" alt=""></a>
-           <div class="modal-action pt-10 pr-32 gap-2 rounded-lg">
+            <a href=""><img class="pt-6 pl-36" src="./images/icon/Group 24.svg" alt=""></a>
+           <div class="modal-action pt-4 pr-32 gap-2 rounded-lg">
            <!-- if there is a button in form, it will close the modal -->
            <button class="border-2 border-[#F85559] text-[#F85559] px-5 py-2 rounded-lg">Close</button>
            <button class=" bg-[#F85559] text-white px-5 py-2 rounded-lg">Buy Now</button>
@@ -240,8 +256,8 @@
             <img class="pl-40 " src="./images/fruit7.png" alt="">
             <h3 class="font-extrabold text-4xl pt-6">Orange</h3>
             <p class="py-4 pt-6 ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-            <a href=""><img class="pt-8 pl-32" src="./images/icon/Group 24.svg" alt=""></a>
-           <div class="modal-action pt-10 pr-32  gap-2 rounded-lg">
+            <a href=""><img class="pt-6 pl-32" src="./images/icon/Group 24.svg" alt=""></a>
+           <div class="modal-action pt-4 pr-32  gap-2 rounded-lg">
            <!-- if there is a button in form, it will close the modal -->
            <button class="border-2 border-[#F85559] text-[#F85559] px-5 py-2 rounded-lg">Close</button>
            <button class=" bg-[#F85559] text-white px-5 py-2 rounded-lg">Buy Now</button>
@@ -269,8 +285,8 @@
             <a href=""><img class="pl-44 " src="./images/fruit8.png" alt=""></a>
             <h3 class="font-extrabold text-4xl pt-6">Red Dragon</h3>
             <p class="py-4 pt-6 ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-            <a href=""><img class="pt-8 pl-36" src="./images/icon/Group 24.svg" alt=""></a>
-            <div class="modal-action pt-10 pr-32 gap-2 rounded-lg">
+            <a href=""><img class="pt-6 pl-36" src="./images/icon/Group 24.svg" alt=""></a>
+            <div class="modal-action pt-4 pr-32 gap-2 rounded-lg">
             <!-- if there is a button in form, it will close the modal -->
             <button class="border-2 border-[#F85559] text-[#F85559] px-5 py-2 rounded-lg">Close</button>
             <button class=" bg-[#F85559] text-white px-5 py-2 rounded-lg">Buy Now</button>
@@ -298,8 +314,8 @@
             <a href=""><img class="pl-44 " src="./images/fruit9.png" alt=""></a>
             <h3 class="font-extrabold text-4xl pt-6">Banana</h3>
             <p class="py-4 pt-6 ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-            <a href=""><img class="pt-8 pl-36" src="./images/icon/Group 24.svg" alt=""></a>
-            <div class="modal-action pt-10 pr-32 gap-2 rounded-lg">
+            <a href=""><img class="pt-6 pl-36" src="./images/icon/Group 24.svg" alt=""></a>
+            <div class="modal-action pt-4 pr-32 gap-2 rounded-lg">
             <!-- if there is a button in form, it will close the modal -->
             <button class="border-2 border-[#F85559] text-[#F85559] px-5 py-2 rounded-lg">Close</button>
             <button class=" bg-[#F85559] text-white px-5 py-2 rounded-lg">Buy Now</button>
@@ -316,13 +332,13 @@
       <section class="mt-28 lg:ml-28 lg:mr-28">
         <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
           <div class="hero-overlay bg-opacity-60"></div>
-          <div class="hero-content text-center text-neutral-content -mt-10 lg:mb-52">
+          <div class="hero-content text-center text-neutral-content mb-68 -mt-80">
             <div class="max-w-xl text-white ">
               <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
               <p class="mb-5 text-sm font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
           </div>
-            <div class="hero-content grid grid-cols-1 lg:grid-cols-4 lg:mt-52 gap-20">
+            <div class="hero-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-52 gap-20">
               <div class="text-white">
                 <img class="w-32 h-32 ml-5" src="./images/member1.png" alt="">
                 <h2 class="pt-8 text-2xl font-bold">Awlad Hossain</h2>
@@ -354,7 +370,7 @@
                 </div>
               </div>
               <div class="text-white ">
-                <img class="w-32 h-32" src="./images/member4.png" alt="">
+                <img class="w-32 h-32 ml-3" src="./images/member4.png" alt="">
                 <h2 class="pt-8 text-2xl font-bold pl-8">Chaity</h2>
                 <p class="pt-2 text-sm font-medium pl-8">Fruits Expert</p>
                 <div class="flex gap-3 pt-4 items-center pl-8">
@@ -367,94 +383,142 @@
         </div>
       </section>
       <!-- wcu section -->
-      <section class="text-center mt-28">
+      <section class="text-center mt-28 ">
         <h1 class="text-5xl font-extrabold">Why Choose Us</h1>
         <p class="text-sm font-medium pt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </section>
-      <section class="mt-12 flex">
-        <div class="order-1">
+      <section class="mt-12 grid lg:grid-cols-3 grid-cols-1 ml-28 mr-28">
+        <!-- box 1 -->
+        <div class="">
           <div class="flex gap-5 mt-3">
-            <div class="bg-gray-300 w-14 h-14 rounded-full">
-            <img class="pl-4 pt-4" src="./images/icon/group 1.svg" alt="">
+            <div class="relative mt-2">
+              <img class="" src="./images/icon/Ellipse 2.svg" alt="">
+              <div class="absolute -mt-12 -ml-2 lg:-mt-12 lg:-ml-1">
+              <img class="pl-4 pt-4" src="./images/icon/group 1.svg" alt="">
+              </div>
             </div>
             <div>
-            <h2 class="text-2xl font-bold">Dedicated Team</h2>
-            <div class="flex flex-col w-24 ">
-            <div class="divider"></div> 
-            </div>
-            <p class="text-sm font-medium pt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-            </div>
-          </div>
-          <div class="flex mt-6 gap-5 ">
-              <div class="bg-gray-300 w-14 h-14 rounded-full">
-              <img class="pl-4 pt-4" src="./images/icon/love 1.svg" alt="">
-              </div>
-              <div>
-              <h2 class="text-2xl font-bold">Fresh is Best</h2>
-              <div class="flex flex-col w-24 ">
-              <div class="divider"></div> 
-              </div>
-              <p class="text-sm font-medium pt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
-            </div>
-            <div class="flex mt-6 gap-5 ">
-              <div class="bg-gray-300 w-14 h-14 rounded-full">
-              <img class="pl-4 pt-4" src="./images/icon/gift-box 1.svg" alt="">
-              </div>
-              <div>
-              <h2 class="text-2xl font-bold">Gift Certificates</h2>
-              <div class="flex flex-col w-24 ">
-              <div class="divider"></div> 
-              </div>
-              <p class="text-sm font-medium pt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
-        </div>
-        <div class="order-2">
-          <img src="./images/whychoose1.png" alt="">
-          </div>
-          <div class="text-right order-3">
-          <div class="flex gap-5 mt-3">
-            <div class="bg-gray-300 w-14 h-14 rounded-full">
-            <img class="pl-4 pt-4" src="./images/icon/group 1.svg" alt="">
-            </div>
-          <div>
-            <h2 class="text-2xl font-bold">Dedicated Team</h2>
+              <h2 class="text-2xl font-bold">Dedicated Team</h2>
             <div class="flex flex-col w-24 ">
               <div class="divider"></div> 
             </div>
-            <p class="text-sm font-medium pt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              <p class="text-sm font-medium pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
           </div>
-          </div>
+          <!-- box 2 -->
           <div class="flex mt-6 gap-5 ">
-            <div class="bg-gray-300 w-14 h-14 rounded-full">
+            <div class="relative mt-2">
+              <img src="./images/icon/Ellipse 2.svg" alt="">
+              <div class="absolute -ml-2 -mt-12 lg:-ml-1">
               <img class="pl-4 pt-4" src="./images/icon/love 1.svg" alt="">
+              </div>
             </div>
             <div>
               <h2 class="text-2xl font-bold">Fresh is Best</h2>
-              <div class="flex flex-col w-24 ">
+            <div class="flex flex-col w-24 ">
               <div class="divider"></div> 
-              </div>
-              <p class="text-sm font-medium pt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
             </div>
-          <div class="flex mt-6 gap-5 ">
-            <div class="bg-gray-300 w-14 h-14 rounded-full">
+              <p class="text-sm font-medium pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="flex mt-6 gap-5">
+            <div class="relative mt-2">
+              <img src="./images/icon/Ellipse 2.svg" alt="">
+              <div class="absolute -mt-12 -ml-1">
               <img class="pl-4 pt-4" src="./images/icon/gift-box 1.svg" alt="">
+              </div>
             </div>
             <div>
               <h2 class="text-2xl font-bold">Gift Certificates</h2>
-              <div class="flex flex-col w-24 ">
+            <div class="flex flex-col w-24 ">
               <div class="divider"></div> 
-              </div>
-              <p class="text-sm font-medium pt-3">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              </div>
+            </div>
+              <p class="text-sm font-medium pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
           </div>
         </div>
-
+        <!-- pic -->
+        <div class="center mt-5 order-first lg:order-none">
+          <img class="h-[414px]" src="./images/whychoose1.png" alt="">
+        </div>
+        
+        <!--  -->
+        <div class="">
+        <div class="end ">
+          <div class="flex gap-5 mt-3 flex-row-reverse">
+            <div class="relative mt-2">
+              <img src="./images/icon/Ellipse 2.svg" alt="">
+              <div class="absolute -mt-8 ml-3">
+              <img class="" src="./images/icon/fruit 1.svg" alt="">
+              </div>
+            </div>
+            <div class="text-right">
+              <h2 class="text-2xl font-bold">Integrated Supplier</h2>
+            <div class="flex flex-col w-24 ">
+              <div class="divider"></div> 
+            </div>
+              <p class="text-sm font-medium pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <!-- box 2 -->
+          <div class="flex mt-6 gap-5 flex-row-reverse ">
+            <div class="relative mt-2">
+              <img src="./images/icon/Ellipse 2.svg" alt="">
+              <div class="absolute -mt-12 -ml-1">
+              <img class="pl-4 pt-4" src="./images/icon/ice-cream 1.svg" alt="">
+              </div>
+            </div>
+            <div class="text-right">
+              <h2 class="text-2xl font-bold">Sustainable Practice</h2>
+            <div class="flex flex-col w-24 ">
+              <div class="divider"></div> 
+            </div>
+              <p class="text-sm font-medium pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="flex mt-6 gap-5 flex-row-reverse">
+            <div class="relative mt-2">
+              <img src="./images/icon/Ellipse 2.svg" alt="">
+              <div class="absolute -mt-12 -ml-1">
+              <img class="pl-4 pt-4" src="./images/icon/like 1.svg" alt="">
+              </div>
+            </div>
+            <div class="text-right">
+              <h2 class="text-2xl font-bold">The Benefits Only</h2>
+            <div class="flex flex-col w-24  ">
+              <div class="divider"></div> 
+            </div>
+              <p class="text-sm font-medium pt-">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+        </div>
       </section>     
-
     </main>
-    <footer>
+    <footer class="w-full h-[526px] bg-black mt-32">
+      <div class="flex items-center justify-center pt-36 gap-3">
+        <img src="./images/logo.png" alt="">
+        <h2 class="text-4xl font-bold text-white pt-2">Fruit Burst</h2>
+      </div>
+      <div class=" text-white flex justify-center  pt-16 gap-20 flex-wrap col-span-2">
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Shop</a>
+        <a href="">All Fruits</a>
+        <a href="">Support</a>
+       <a href="">My Account</a>
+      </div>
+      <div class="flex justify-center pt-16 gap-10">
+        <a href=""><img src="./images/icon/twitter 1.svg" alt=""></a>
+        <a href=""><img src="./images/icon/facebook 1.svg" alt=""></a>
+        <a href=""><img src="./images/icon/Group 49 (1).svg" alt=""></a>
+        <a href=""><img src="./images/icon/linkedin 1.svg" alt=""></a>
+        <a href=""><img src="./images/icon/instagram 1.svg" alt=""></a>
+        <a href=""><img src="./images/icon/apple 1.svg" alt=""></a>
+      </div>
+
         
     </footer>
     
